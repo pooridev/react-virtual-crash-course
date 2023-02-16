@@ -1,0 +1,59 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background: #dddddd;
+}
+
+#root {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+}
+
+.listItem {
+  padding: 1rem;
+  background: #6b43f7;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.listItem > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.listItem:first-child,
+.listItem:last-child {
+  margin: initial;
+}
